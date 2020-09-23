@@ -58,18 +58,12 @@
                 padding-right: 41px;
                 padding-left: 1000px;
             }
-            #filler {
-                position: absolute;
-                top: 60px;
-                z-index: 1;
-                user-select: none;
+            .iphonefiller {
+                width: 100%;
             }
-            #filler2{
-                position: absolute;
-                top: 60px;
-                z-index: 1;
-                left: 170px;
-                user-select: none;
+            .iphonefiller img {
+                width: 400px;
+                height: 200px;
             }
             
             @media only screen and (min-width: 768px) {
@@ -114,26 +108,21 @@
                 z-index: 2;
                 user-select: none;
             }
-                #filler {
-                    position: absolute;
-                    top: 50px;
-                    width: 400px;
-                    height: 300px;
-                    user-select: none;
-                }
-                #filler2 {
-                    position: absolute;
-                    top: 50px;
-                    left: 400px;
-                    width: 400px;
-                    height: 300px;
-                    user-select: none;
-                }
                 #para {
                     position: absolute;
                     top: 500px;
                     width: 900px;
                     font-size: 50px;
+                }
+                .iphonefiller {
+                    width: 100%;
+                }
+                .iphonefiller img {
+                    position: absolute;
+                    top: 50px;
+                    width: 900px;
+                    height: 300px;
+                    left: 25px;
                 }
             
             @media only screen and (min-width: 1000px) {
@@ -196,8 +185,8 @@
             }
                 .filler2 {
                     position: absolute;
-                    top: 700px;
-                    height: 300px;
+                    top: 500px;
+                    height: 500px;
                     width: 300px;
                     left: 700px;
                     user-select: none;
@@ -205,6 +194,9 @@
                     z-index: 3;
                     opacity: 50%
             }
+                .iphonefiller {
+                    display: none;
+                }
                
         </style>
     </head>
@@ -213,6 +205,10 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQroqMtWNtcdA1UnjqToHiyQjr4DBbyCNqDyA&usqp=CAU" id="banner" alt="banner" draggable="false" onContextMenu="return false;">
         <div class="filler1"></div>
         <div class="filler2"></div>
+        
+        <div class="iphonefiller">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTG6ewTSSpBPcFZewZ7ikoCO24t2PWNGlvSkw&usqp=CAU">
+        </div>
         
         <h1 id="heading">Lorem Ipsum</h1>
 
